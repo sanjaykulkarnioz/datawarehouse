@@ -1,0 +1,86 @@
+{
+  "ingredients": [
+    {
+      "name": "lasagna noodles",
+      "quantity": "12",
+      "unit": "pieces"
+    },
+    {
+      "name": "olive oil",
+      "quantity": "2",
+      "unit": "tablespoons"
+    },
+    {
+      "name": "onion",
+      "quantity": "1",
+      "unit": "large",
+      "preparation": "chopped"
+    },
+    {
+      "name": "garlic",
+      "quantity": "3",
+      "unit": "cloves",
+      "preparation": "minced"
+    },
+    {
+      "name": "zucchini",
+      "quantity": "2",
+      "unit": "medium",
+      "preparation": "sliced"
+    },
+    {
+      "name": "bell peppers",
+      "quantity": "2",
+      "unit": "medium",
+      "preparation": "chopped"
+    },
+    {
+      "name": "mushrooms",
+      "quantity": "2",
+      "unit": "cups",
+      "preparation": "sliced"
+    },
+    {
+      "name": "spinach",
+      "quantity": "4",
+      "unit": "cups",
+      "preparation": "fresh"
+    },
+    {
+      "name": "ricotta cheese",
+      "quantity": "2",
+      "unit": "cups"
+    },
+    {
+      "name": "mozzarella cheese",
+      "quantity": "2",
+      "unit": "cups",
+      "preparation": "shredded"
+    },
+    {
+      "name": "parmesan cheese",
+      "quantity": "1",
+      "unit": "cup",
+      "preparation": "grated"
+    },
+    {
+      "name": "marinara sauce",
+      "quantity": "4",
+      "unit": "cups"
+    },
+    {
+      "name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "name": "basil",
+      "quantity": "2",
+      "unit": "tablespoons",
+      "preparation": "fresh, chopped"
+    }
+  ]
+}
