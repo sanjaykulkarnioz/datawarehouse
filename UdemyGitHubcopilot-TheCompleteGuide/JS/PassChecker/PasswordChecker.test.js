@@ -1,39 +1,36 @@
-import { checkPassword } from './PasswordChecker.js'
-import {describe, test} from 'node:test'
-import * as assert from 'node:assert'
+import { checkPassword } from "./PasswordChecker";
 
-describe('checkPassword test suite', () => {
-    test('should throw an error if the password is not a string', () => {
-        assert.throws(() => checkPassword(123), Error('Password must be a string'))
-    });
-    test('should throw an error if the password is less than 8 characters long', () => {
-        assert.throws(() => checkPassword('abc'), Error('Password must be at least 8 characters long'))
-    });
-    test('should throw an error if the password is more than 20 characters long', () => {
-        assert.throws(() => checkPassword('abcdefghijabcdefghijabcdefghij'), Error
-        ('Password must be at most 20 characters long'))
-    });
-    test('should throw an error if the password does not contain at least one lowercase letter', () => {
-        assert.throws(() => checkPassword('ABC12345'), Error('Password must contain at least one lowercase letter'))
-    });
-    test('should throw an error if the password does not contain at least one uppercase letter', () => {
-        assert.throws(() => checkPassword('abc12345'), Error('Password must contain at least one uppercase letter'))
-    });
-    test('should throw an error if the password does not contain at least one digit', () => {
-        assert.throws(() => checkPassword('Abcdefgh'), Error('Password must contain at least one digit'))
-    });
-    test('should throw an error if the password does not contain at least one special character', () => {
-        assert.throws(() => checkPassword('Abcdefgh1'), Error('Password must contain at least one special character'))
+describe('checkPassword', () => {
+    test('throws an error if the password is not a string', () => {
+        expect(() => checkPassword(12345678)).toThrow('Password must be a string');
     });
 
-    test('should throw error if the password contains the ! character', ()=>{
-
-        assert.throws(() => checkPassword('Abcdefgh1!'), Error('Password must contain at least one special character'))
-    })
-
-    test('should not throw an error if the password meets all the criteria', () => {
-        assert.doesNotThrow(() => checkPassword('Abcdefgh1?'))
+    test('throws an error if the password is less than 8 characters long', () => {
+        expect(() => checkPassword('1234567')).toThrow('Password must be at least 8 characters long');
     });
 
+    test('throws an error if the password is more than 20 characters long', () => {
+        expect(() => checkPassword('123456789012345678901')).toThrow('Password must be at most 20 characters long');
+    });
 
-})
+    test('throws an error if the password does not contain at least one lowercase letter', () => {
+        expect(() => checkPassword('12345678')).toThrow('Password must contain at least one lowercase letter');
+    });
+
+    test('throws an error if the password does not contain at least one uppercase letter', () => {
+        expect(() => checkPassword('12345678')).toThrow('Password must contain at least one uppercase letter');
+    });
+
+    test('throws an error if the password does not contain at least one digit', () => {
+        expect(() => checkPassword('abcdefgh')).toThrow('Password must contain at least one digit');
+    });
+
+    test('throws an error if the password does not contain at least one special character', () => {
+        expect(() => checkPassword('Abcdefgh')).toThrow('Password must contain at least one special character');
+    });
+
+    test('does not throw an error if the password meets all the criteria', () => {
+        expect(() => checkPassword('A1b2c3d4!')).not.toThrow();
+    });
+}
+

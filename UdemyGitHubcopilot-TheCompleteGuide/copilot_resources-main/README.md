@@ -1,26 +1,26 @@
-# Project Structure
+# Copilot Resources
 
-This project contains multiple sub-projects organized by language and functionality. Below are the links to the main folders:
+This project contains various resources and examples for using GitHub Copilot. Below are the links to the main folders and files within the `copilot_resources-main` directory:
 
 ## Java Projects
 
-- [empl](java/empl)
-- [starter](java/starter)
+- [empl](copilot_resources-main/java/empl)
+- [starter](copilot_resources-main/java/starter)
 
 ## JavaScript Projects
 
-- [EmplBack](JS/EmplBack)
-- [PassChecker](JS/PassChecker)
+- [EmplBack](copilot_resources-main/JS/EmplBack)
+- [PassChecker](copilot_resources-main/JS/PassChecker)
 
 ## Python Projects
 
-- [data_viz](Python/data_viz)
-- [PassChecker](Python/PassChecker)
+- [data_viz](copilot_resources-main/Python/data_viz)
 
 ## React Projects
 
-- [empl-front](React/empl-front)
+- [empl-front](copilot_resources-main/React/empl-front)
 
-## Additional Files
+## Starter Files
 
-- [README.md](README.md)
+- [email_parser.js](copilot_resources-main/starter/email_parser.js)
+- [email.eml](copilot_resources-main/starter/email.eml)
